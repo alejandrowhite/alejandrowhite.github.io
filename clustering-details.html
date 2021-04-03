@@ -96,7 +96,22 @@
               </div>
               <div class="swiper-pagination"></div>
             <p>
-                Data exploration and analysis is a fundamental task to discover insights. For this project we implemented a clustering algorithm to identify categories of listings in a BNB platform. Our results can support companies to recommend better information based on types of listings and preferences of people.   
+                Manhattan, New York is a haven for several wonderful establishments and tourist attractions in the likes of Broadway, Times Square, and the famed Central Park. In this regard, several tourists visit and stay in the borough of Manhattan. Due to the fact that several landmarks and a plethora of sights and sound exist in Manhattan, staying in Manhattan is surely a priority for the majority of tourists. <br><br> 
+                In this case, looking for a place to stay in Manhattan is vital and there is no other easier than booking an Airbnb. There are plenty of Airbnb listings in Manhattan and to help the tourists choose where to stay, we sought to answer the question What Airbnb listing is the best place to stay at in Manhattan based on location, price, and review rating? The proces that we undertook are as follows: <br><br>
+                First, data was wrangled from the Airbnb repository and cleaned to be ready for processing. Since the focus was on price, location and review rating, we excluded any information that wasn't related to these three. The cleaned data was stored in a csv file. <br><br>
+                Second, clustering was performed on the cleaned data. Clustering is a type of exploratory data analysis wherein it identifies and makes subgroups from the dataset being processed. For this data, we used K-Means clustering. K-Means partitions the dataset into k pre-defined subgroups and assigns datapoints to these subgroups based on their distance to the center of the subgroup. In performing the K-Means Clustering algorithm in this dataset, the following steps were implemented:<br><br>
+                Data was scaled via the RobustScaler and PCA was performed. This was done to normalize the dataset as values were far off from each other. <br>
+                1. Internal validation algorithms were ran to look for the most optimal value for k. The internal validation criteria used to check for the optimal value of k were calculating the sum of squared distances to the centroids and gap statistic.<br> 
+                2. Clusters were analyzed and checked from the graphs of the internal validation criteria. 6 clusters were derived from the algorithms.<br><br>
+                3. Finally, we checked the features of each of the clusters that were formed. <br><br>
+                As it turns out, what we found was that the best value for k according to internal validation cirteria was 2 but this wouldn't make sense as this would mean that an Airbnb listing was objectively identifiable as superior or inferior only. In the end, 6 clusters were chosen and it had the salient features:<br><br>
+                Cluster 1: Bad listings, poor reviews, high price<br>
+                Cluster 2: Low budget, Upper Manhattan<br>
+                Cluster 3: Superior Manhattan, good reviews and budget<br>
+                Cluster 4: High budget, Lower Manhattan<br>
+                Cluster 5: Luxury listings, ultra-expensive<br>
+                Cluster 6: Inferior Manhattan, low review and budget<br>
+                The results of this study can help people going into Manhattan look for a place to stay based on their preference of an Airbnb listing. It is also hoped that further and future studies of the same data can provide more valuable insights for prospective Manhattan tourists.   
             </p>
             </div>
           </div>
