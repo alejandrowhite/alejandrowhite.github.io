@@ -97,7 +97,11 @@
               <div class="swiper-pagination"></div>
             <div class="portfolio-description">
               <p>
-                 The company required a solution to predict the price of Housing in any area of the city. This information will be provided to customers with aditional data including the maximum and minimum value of sale. Aditional information about how to increase the value of sale will be given.  <br> <br> For this project I develop a Machine Learning model that use prices of more than 30.000 properties, scrapped from the web, and predict the value of a house. It also have a recommendation system that help the customer find more detailed information about the selling price of the house and action they can do to increase the selling price.  
+                 New advancement in technology gave birth to the Algorithmic Trading. Traders, programmers, and researchers alike are taking advantage of Big Data from both digital and non-digital channels and transform them into valuable information that complement traditional trading indicators (e.g. moving average, RSI, etc.). Furthermore, Machine Learning has allowed a purely data-driven approach in predicting stock price movements; that is, without the use of domain knowledge or theoretical trading models. <br><br>
+                 One key task in the field is the translation of news (or event) sentiments as market indicators that boosts the prediction accuracies. Traditional approaches to the task include the extraction of sentiment scores from social media chatter and news articles. While these approaches prove useful, they involve a lot of steps and the use of multiple APIs. This is further complicated by defining query terms that may or may not be comprehensive for the analysis. <br><br>
+                 The limitations in traditional approaches led us to consider the Global Knowledge Graph (GKG) database, a global compilation of documents available in almost 100 languages. Each document in the GKG database has a tagged entity and a computed sentiment score. Utilizing the GKG allows us to focus on defining search queries without worrying about the APIs, webscraping, and preprocessing. <br><br>
+                 For this paper, we present a methodology that allows us to incorporate sentiment scores from the GKG database in the prediction of stock price movement of FAANG companies (Facebook, Amazon, Apple, Netflix, and Google). We processed GKG records from May 2017 to December 2017 using PySpark and extracted entries relevant to the companies of interest. We also filtered out non-Finance news and mean aggregated the sentiment scores by the hour. Meanwhile, hourly stock price movement for FAANG companies were obtained from Kaggle. <br><br>
+                 We were able to produce satisfying results using a Gradient Boosted Tree Regressor, sentiment scores from GKG, and other features extracted from the time series. We recommend that future studies may explore the use of other machine learning models (regressors and classifiers), and the use of deep learning models such as LSTM and Bi-LSTM in predicting stock price movements. Further, we recommend extending the time span from 6 months to several years to see how much effective GKG can be in complementing existing approaches to Algorithmic Trading. <br><br> 
               </p>
             </div>
             </div>
@@ -107,15 +111,14 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Machine Learning, Geospatial Analysis and Recommendation Systems</li>
-                <li><strong>Client</strong>: NDA.</li>
-                <li><strong>Project date</strong>: 2021</li>               
+                <li><strong>Category</strong>: Big Data, Spark, Machine Learning, Natural Language Processing</li>
+                <li><strong>Project date</strong>: 2020</li>               
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Housing Price Prediction</h2>
+              <h2>Stocks Price Prediction</h2>
               <p>
-                 Augmenting the results of Machine Learning with Geospatial Data can significantly increase the results and provide invaluable insights for companies. For this project I used geospatial data of the city including urban density, income, and distance to amenities like restaurants, train networks and malls. <br><br> The model was able to provide a MAE of 0.12 which provide buyers an increase in the confidence when they take decisions about purchasing real state properties which in many cases lack the statistical rigour.   
+                 Global libraries like GDELD GKG can increase the information of machine learning modeels. In this case we use Big Data techniques to predict the value of stocks based on the sentiments of news related to FAANG stocks. Our results show significant correlation between news sentiments and price of stocks and can be use as an external source of data to create models to predict prices of stocks.    
               </p>
             </div>
           </div>
